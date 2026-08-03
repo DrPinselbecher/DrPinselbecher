@@ -1,7 +1,7 @@
 <p align="center">
   <img
     width="100%"
-    src="./assets/tech-stack-header.gif"
+    src="./assets/tech-stack-header.png"
     alt="René Theis – Full-Stack · Backend · Frontend · Deployment"
   />
 </p>
@@ -276,5 +276,3 @@ Diese Erfahrung bringe ich heute in technische Projekte ein: **Abläufe verstehe
     alt=""
   />
 </p>
-#   D r P i n s e l b e c h e r  
- 
