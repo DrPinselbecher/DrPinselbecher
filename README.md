@@ -1,9 +1,12 @@
 <p align="center">
-  <img
-    width="100%"
-    src="./assets/tech-stack-header.png"
-    alt="René Theis – Full-Stack · Backend · Frontend · Deployment"
-  />
+  <picture>
+    <source srcset="./assets/tech-stack-header.webp" type="image/webp" />
+    <img
+      width="100%"
+      src="./assets/tech-stack-header.png"
+      alt="René Theis – Full-Stack · Backend · Frontend · Deployment"
+    />
+  </picture>
 </p>
 
 <p align="center">
