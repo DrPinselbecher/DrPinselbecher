@@ -29,21 +29,14 @@ Dabei interessiert mich der komplette Weg einer Anwendung: von Benutzeroberfläc
 
 Saubere Architektur, wartbarer Code und Lösungen mit echtem praktischem Nutzen stehen für mich im Vordergrund.
 
-```yaml
-entwickler:
-  name: "René Theis"
-  rolle: "Full-Stack-Entwickler"
-  schwerpunkte:
-    - "Backend & REST-APIs"
-    - "Full-Stack-Webanwendungen"
-    - "Deployment & Infrastruktur"
-    - "KI-gestützte Automatisierung"
-  arbeitsweise:
-    - "strukturiert"
-    - "lösungsorientiert"
-    - "qualitätsbewusst"
-  perspektive: "DevSecOps"
-```
+<table>
+<tr>
+<td width="25%" align="center"><strong>Backend</strong><br /><sub>Sichere REST-APIs und klare Domänenlogik</sub></td>
+<td width="25%" align="center"><strong>Frontend</strong><br /><sub>Reaktive Oberflächen mit Angular und TypeScript</sub></td>
+<td width="25%" align="center"><strong>Betrieb</strong><br /><sub>Docker, Linux, Nginx, HTTPS und Deployment</sub></td>
+<td width="25%" align="center"><strong>Automatisierung</strong><br /><sub>Nachvollziehbare Workflows mit APIs und KI</sub></td>
+</tr>
+</table>
 
 ## Tech-Stack
 
@@ -66,32 +59,34 @@ entwickler:
 
 ## Ausgewählte Projekte
 
+Die folgenden Projekte zeigen vollständige technische Abläufe – von der Benutzeroberfläche über API und Datenverarbeitung bis zum produktiven Betrieb.
+
 <table>
 <tr>
 <td width="50%" valign="top">
 
+<a href="https://videoflix.rene-theis.de">
+  <img width="100%" src="./assets/projects/videoflix.png" alt="Videoflix Landingpage" />
+</a>
+
 <h3 align="center">Videoflix</h3>
 
-<p align="center"><strong>Full-Stack-Streaming-Plattform mit produktivem Deployment</strong></p>
+<p align="center"><strong>Sichere Streaming-Plattform mit automatisierter Video-Pipeline</strong></p>
 
-Django-basierte Videoplattform mit sicherer Authentifizierung, Hintergrundverarbeitung und adaptivem HLS-Streaming.
+Videos werden serverseitig verarbeitet und anschließend als geschützte adaptive HLS-Streams ausgeliefert.
 
-<strong>Highlights</strong>
-
-- JWT-Authentifizierung über HTTP-only Cookies
-- E-Mail-Aktivierung und Passwort-Reset
-- Videoverarbeitung mit FFmpeg
-- HLS in 480p, 720p und 1080p
-- Redis und Django RQ für Hintergrundjobs
-- PostgreSQL, Docker, Gunicorn und Nginx
-- HTTPS und produktiver Betrieb
+<ul>
+  <li><strong>Problem:</strong> Große Quelldateien sicher verarbeiten und in mehreren Qualitätsstufen bereitstellen.</li>
+  <li><strong>Lösung:</strong> FFmpeg-Pipeline mit Redis, Django RQ und geschützter HLS-Auslieferung.</li>
+  <li><strong>Ergebnis:</strong> Automatische 480p-, 720p- und 1080p-Varianten im produktiven Docker-Deployment.</li>
+</ul>
 
 <p align="center">
   <a href="https://github.com/DrPinselbecher/Videoflix_Backend">
-    <img src="https://img.shields.io/badge/Backend-Code-181717?style=for-the-badge&logo=github" alt="Videoflix Backend" />
+    <img src="https://img.shields.io/badge/Backend-Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Videoflix Backend" />
   </a>
   <a href="https://github.com/DrPinselbecher/Videoflix_Frontend">
-    <img src="https://img.shields.io/badge/Frontend-Code-181717?style=for-the-badge&logo=github" alt="Videoflix Frontend" />
+    <img src="https://img.shields.io/badge/Frontend-Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Videoflix Frontend" />
   </a>
   <a href="https://videoflix.rene-theis.de">
     <img src="https://img.shields.io/badge/Live-Demo-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Videoflix Live Demo" />
@@ -101,84 +96,28 @@ Django-basierte Videoplattform mit sicherer Authentifizierung, Hintergrundverarb
 </td>
 <td width="50%" valign="top">
 
+<a href="https://github.com/DrPinselbecher/Quizly_Frontend">
+  <img width="100%" src="./assets/projects/quizly.png" alt="Quizly Landingpage" />
+</a>
+
 <h3 align="center">Quizly</h3>
 
-<p align="center"><strong>KI-gestützte Quiz-Plattform aus YouTube-Inhalten</strong></p>
+<p align="center"><strong>KI-gestützte Quiz-Generierung aus YouTube-Inhalten</strong></p>
 
-Full-Stack-Anwendung, die aus einer YouTube-URL automatisiert ein Quiz mit zehn Fragen erzeugt.
+Aus einer YouTube-URL entsteht automatisch ein validiertes Quiz mit zehn Fragen und benutzerbezogener Verwaltung.
 
-<strong>Highlights</strong>
-
-- Audio-Extraktion mit yt-dlp
-- Transkription mit Whisper
-- Quiz-Generierung mit Google Gemini
-- JWT-Authentifizierung über HTTP-only Cookies
-- Benutzerbezogene Quiz-Verwaltung
-- Automatisierte Backend-Tests
+<ul>
+  <li><strong>Problem:</strong> Lange Videoinhalte in interaktives Lernmaterial überführen.</li>
+  <li><strong>Lösung:</strong> yt-dlp, Whisper-Transkription und strukturierte Generierung mit Gemini.</li>
+  <li><strong>Ergebnis:</strong> Durchgängiger Ablauf von der URL bis zum gespeicherten und bearbeitbaren Quiz.</li>
+</ul>
 
 <p align="center">
   <a href="https://github.com/DrPinselbecher/Quizly_Backend">
-    <img src="https://img.shields.io/badge/Backend-Code-181717?style=for-the-badge&logo=github" alt="Quizly Backend" />
+    <img src="https://img.shields.io/badge/Backend-Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Quizly Backend" />
   </a>
   <a href="https://github.com/DrPinselbecher/Quizly_Frontend">
-    <img src="https://img.shields.io/badge/Frontend-Code-181717?style=for-the-badge&logo=github" alt="Quizly Frontend" />
-  </a>
-</p>
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-<h3 align="center">Coderr</h3>
-
-<p align="center"><strong>Service-Marktplatz mit rollenbasierter REST-API</strong></p>
-
-Plattform für Dienstleistungen, Angebote, Bestellungen, Bewertungen und unterschiedliche Benutzerrollen.
-
-<strong>Highlights</strong>
-
-- Business- und Customer-Rollen
-- Angebote mit Basic-, Standard- und Premium-Stufe
-- Orders mit Statusverwaltung
-- Bewertungen mit Validierung
-- Filterung, Suche, Sortierung und Pagination
-- Vollständig getestete REST-API
-
-<p align="center">
-  <a href="https://github.com/DrPinselbecher/Coderr_Backend">
-    <img src="https://img.shields.io/badge/Backend-Code-181717?style=for-the-badge&logo=github" alt="Coderr Backend" />
-  </a>
-  <a href="https://github.com/DrPinselbecher/Coderr_Frontend">
-    <img src="https://img.shields.io/badge/Frontend-Code-181717?style=for-the-badge&logo=github" alt="Coderr Frontend" />
-  </a>
-</p>
-
-</td>
-<td width="50%" valign="top">
-
-<h3 align="center">KanMind</h3>
-
-<p align="center"><strong>Kanban- und Aufgabenverwaltung mit Rollen & Berechtigungen</strong></p>
-
-Webbasierte Aufgabenverwaltung für Boards, Teams, Tasks und Kommentare.
-
-<strong>Highlights</strong>
-
-- Token-basierte Authentifizierung
-- Boards mit Owner- und Member-Rollen
-- Tasks mit Status, Priorität und Fälligkeit
-- Assignee- und Reviewer-Zuordnung
-- Kommentare und Berechtigungslogik
-- REST-basierte Backend-Architektur
-
-<p align="center">
-  <a href="https://github.com/DrPinselbecher/KanMind_Backend_first_backend">
-    <img src="https://img.shields.io/badge/Backend-Code-181717?style=for-the-badge&logo=github" alt="KanMind Backend" />
-  </a>
-  <a href="https://github.com/DrPinselbecher/KanMind_Frontend">
-    <img src="https://img.shields.io/badge/Frontend-Code-181717?style=for-the-badge&logo=github" alt="KanMind Frontend" />
+    <img src="https://img.shields.io/badge/Frontend-Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Quizly Frontend" />
   </a>
 </p>
 
@@ -186,64 +125,82 @@ Webbasierte Aufgabenverwaltung für Boards, Teams, Tasks und Kommentare.
 </tr>
 </table>
 
-<p align="center">
-  <a href="https://github.com/DrPinselbecher/portfolio_2.0">
-    <img src="https://img.shields.io/badge/Portfolio-Quellcode-0F172A?style=flat-square&logo=github" alt="Portfolio Quellcode" />
-  </a>
-  <a href="https://github.com/DrPinselbecher/discord-radio-bots">
-    <img src="https://img.shields.io/badge/Discord_Radio_Bots-Python-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord Radio Bots" />
-  </a>
-  <a href="https://github.com/DrPinselbecher/DABubble">
-    <img src="https://img.shields.io/badge/DABubble-Angular-DD0031?style=flat-square&logo=angular&logoColor=white" alt="DABubble" />
-  </a>
-</p>
+<details>
+<summary><strong>Videoflix-Architektur anzeigen</strong></summary>
+
+```mermaid
+flowchart LR
+    A["Angular Frontend"] -->|"HTTPS + Cookies"| B["Django REST API"]
+    B --> C["PostgreSQL"]
+    B --> D["Redis Queue"]
+    D --> E["RQ Worker"]
+    E --> F["FFmpeg"]
+    F --> G["Geschützte HLS-Dateien"]
+    G -->|"480p · 720p · 1080p"| A
+```
+
+</details>
+
+<details>
+<summary><strong>Quizly-Generierungsablauf anzeigen</strong></summary>
+
+```mermaid
+flowchart LR
+    A["YouTube-URL"] --> B["yt-dlp"]
+    B --> C["Whisper"]
+    C --> D["Transkript"]
+    D --> E["Gemini"]
+    E --> F["Validierte Quizdaten"]
+    F --> G["Django API + Datenbank"]
+    G --> H["Persönliche Quiz-Bibliothek"]
+```
+
+</details>
+
+### Weitere Projekte
+
+| Projekt | Technischer Schwerpunkt | Code |
+| --- | --- | --- |
+| **Coderr** | Rollenbasierter Service-Marktplatz mit Angeboten, Bestellungen, Bewertungen, Suche und Pagination | [Backend](https://github.com/DrPinselbecher/Coderr_Backend) · [Frontend](https://github.com/DrPinselbecher/Coderr_Frontend) |
+| **KanMind** | Board- und Aufgabenverwaltung mit Owner-, Member-, Assignee- und Reviewer-Berechtigungen | [Backend](https://github.com/DrPinselbecher/KanMind_Backend_first_backend) · [Frontend](https://github.com/DrPinselbecher/KanMind_Frontend) |
+| **DABubble** | Realtime-Kommunikation mit Angular, Firebase, Channels, Direktnachrichten und Threads | [Repository](https://github.com/DrPinselbecher/DABubble) |
+| **Portfolio 2.0** | Angular-Portfolio mit interaktiver Projekt-Helix und produktivem Deployment | [Repository](https://github.com/DrPinselbecher/portfolio_2.0) · [Live](https://rene-theis.de) |
 
 ---
 
 ## Automatisierung & KI
 
-Neben klassischer Softwareentwicklung beschäftige ich mich mit **n8n und KI-gestützten Workflows**.
+Ich entwickle mit **n8n, APIs und KI-Modellen** nachvollziehbare Automatisierungen – unter anderem für E-Mail-Klassifizierung und intelligente Antwortvorbereitung. Kritische Entscheidungen bleiben dabei kontrollierbar und enden bewusst in einer menschlichen Prüfung.
 
-Aktuell entwickle ich unter anderem Automatisierungen zur **E-Mail-Klassifizierung und intelligenten Antwortvorbereitung**. Dabei verbinde ich APIs, regelbasierte Logik und KI-Modelle zu nachvollziehbaren Workflows, statt KI nur als isoliertes Feature einzusetzen.
-
-```text
-Eingang → Datenaufbereitung → Klassifizierung → Entscheidung → Entwurf → menschliche Prüfung
+```mermaid
+flowchart LR
+    A["Eingang"] --> B["Datenaufbereitung"]
+    B --> C["Klassifizierung"]
+    C --> D{"Regelbasierte Entscheidung"}
+    D --> E["Antwortentwurf"]
+    E --> F["Menschliche Prüfung"]
 ```
 
 ---
 
 ## Technik trifft Praxiserfahrung
 
-Vor meinem Einstieg in die Softwareentwicklung habe ich mehrere Jahre in operativen und verantwortungsvollen Positionen gearbeitet, unter anderem mit Führungsverantwortung.
-
-Diese Erfahrung bringe ich heute in technische Projekte ein: **Abläufe verstehen, Anforderungen strukturieren, Verantwortung übernehmen und Lösungen entwickeln, die nicht nur technisch sauber sind, sondern im Alltag funktionieren.**
+Vor meinem Einstieg in die Softwareentwicklung habe ich in operativen Positionen mit Führungsverantwortung gearbeitet. Diese Erfahrung prägt meine technische Arbeit: **Abläufe verstehen, Anforderungen strukturieren, Verantwortung übernehmen und Lösungen entwickeln, die im Alltag funktionieren.**
 
 ---
 
-## Aktueller Fokus
+## Engineering-Qualität
 
 <table>
 <tr>
-<td><strong>Backend</strong></td>
-<td>Python · Django · Django REST Framework · API-Design</td>
-</tr>
-<tr>
-<td><strong>Frontend</strong></td>
-<td>Angular · TypeScript</td>
-</tr>
-<tr>
-<td><strong>Infrastruktur</strong></td>
-<td>Docker · Linux · Nginx · Gunicorn · Deployment</td>
-</tr>
-<tr>
-<td><strong>Automatisierung</strong></td>
-<td>n8n · KI-Integrationen · API-Workflows</td>
-</tr>
-<tr>
-<td><strong>Perspektive</strong></td>
-<td>DevOps → DevSecOps</td>
+<td width="25%" align="center"><strong>Sicherheit</strong><br /><sub>HttpOnly-Cookies, Token-Blacklists und präzise Berechtigungen</sub></td>
+<td width="25%" align="center"><strong>Testbarkeit</strong><br /><sub>Automatisierte Tests und klare Validierung</sub></td>
+<td width="25%" align="center"><strong>Wartbarkeit</strong><br /><sub>Definierte API-Verträge und getrennte Verantwortlichkeiten</sub></td>
+<td width="25%" align="center"><strong>Betrieb</strong><br /><sub>Docker, Gunicorn, Nginx und HTTPS</sub></td>
 </tr>
 </table>
+
+Mein aktueller Entwicklungsschwerpunkt verbindet **Full-Stack-Engineering, DevOps und schrittweise DevSecOps-Praktiken**.
 
 ---
 
@@ -266,10 +223,25 @@ Diese Erfahrung bringe ich heute in technische Projekte ein: **Abläufe verstehe
   </picture>
 </p>
 
+---
+
+## Kontakt
+
 <p align="center">
   <strong>Interesse an Full-Stack-, Backend- oder Softwareentwicklungsprojekten?</strong><br />
-  Mehr über mich und meine Projekte findest du auf
-  <a href="https://rene-theis.de"><strong>rene-theis.de</strong></a>.
+  Schreib mir direkt oder sieh dir weitere Arbeiten in meinem Portfolio an.
+</p>
+
+<p align="center">
+  <a href="mailto:contact@rene-theis.de">
+    <img src="https://img.shields.io/badge/E--Mail-contact%40rene--theis.de-0F172A?style=for-the-badge&logo=minutemailer&logoColor=white" alt="E-Mail an René Theis" />
+  </a>
+  <a href="https://www.linkedin.com/in/ren%C3%A9-theis">
+    <img src="https://img.shields.io/badge/LinkedIn-Ren%C3%A9%20Theis-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="René Theis auf LinkedIn" />
+  </a>
+  <a href="https://rene-theis.de">
+    <img src="https://img.shields.io/badge/Portfolio-rene--theis.de-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio von René Theis" />
+  </a>
 </p>
 
 <p align="center">
